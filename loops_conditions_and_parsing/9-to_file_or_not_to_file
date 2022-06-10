@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Script that gives information about a file
 FILENAME="./school" 
-if [[-e $FILENAME ]]
+if [ -e $FILENAME ]
 then
     echo "school file exist"
     if [ -s $FILENAME ]
