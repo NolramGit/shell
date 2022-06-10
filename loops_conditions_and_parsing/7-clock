@@ -5,10 +5,10 @@ minutes=1
 
 while [ $hour -le 12 ]
 do
-    echo "hora"
+    echo $hour
     while [ $minutes -le 59 ]
     do
-        echo "hola"
+        echo $minutes
         ((minutes++))
     done
     ((hour++))
