@@ -12,7 +12,6 @@ then
     fi
     if [ -f $FILENAME ]
     then
-    else    
         echo "school is a regular file"
     fi
 else
