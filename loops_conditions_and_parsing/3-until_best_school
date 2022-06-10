@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#While loop that prints Best School 10 times.
+#Until loop that prints Best School 10 times.
 count=1
 until [ $count -gt 10 ]
 do
