@@ -1,2 +1,2 @@
-#!/in/bash
+#!/bin/bash
 cat -n | cat -T | grep [1,3,5,7,9]^ | cut -d "I" -f2
