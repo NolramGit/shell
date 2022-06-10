@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#7 While loop that prints clock.
+hour=1
+minutes=1
+
+while [ $hour -le 12 ]
+do
+    echo "hora"
+    while [ $minutes -le 59 ]
+    do
+        echo "hola"
+        ((minutes++))
+    done
+    ((hour++))
+    minutes=1
+done
+
