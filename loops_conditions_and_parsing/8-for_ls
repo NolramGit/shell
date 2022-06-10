@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #Loop for that prints list of files in dirtectory.
-for i in $(ls); do echo $i | cut -d "-" -f2; done 
+for i in $(ls); do echo "$i" | cut -d "-" -f2; done 
