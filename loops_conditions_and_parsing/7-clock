@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #7 While loop that prints clock.
-hour=1
+hour=0
 minutes=1
 
 while [ $hour -le 12 ]
