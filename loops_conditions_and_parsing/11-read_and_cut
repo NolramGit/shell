@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #Filter user, userID, Home dir from file whit read and while commands
-cat /etc/passwd | while read -r; do echo $REPLY | cut -d ":" -f 1,3,6; done
+cat /etc/passwd | while read -r; do echo "$REPLY" | cut -d ":" -f 1,3,6; done
