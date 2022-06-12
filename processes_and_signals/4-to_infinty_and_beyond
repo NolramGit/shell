@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Script that print "To infinity and beyond"
+# shellcheck disable=SC200
+for ((;;))
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
