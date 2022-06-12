@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Script that print list of all processes running
+ps -axu
