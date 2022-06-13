@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Script that kill proccess
+# shellcheck disable=SC200
+kill -9 "$(pgrep -f "7-highlander")"
