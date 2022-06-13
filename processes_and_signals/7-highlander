@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Script that print "To infinity and beyond"
+# shellcheck disable=SC200
+for ((;;))
+do
+    trap 'echo I am invincible!!!' TERM
+    echo "To infinity and beyond"
+    sleep 2
+done
