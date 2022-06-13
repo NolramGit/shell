@@ -3,25 +3,25 @@
 # shellcheck disable=SC200
 
 case "$1" in
-    "start")
+    start)
         #touch /var/run/my_process.pid
         echo $BASHPID > /var/run/my_process.pid
         echo "manage_my_process started"
         ./manage_my_process &
         ;;
-    "stop")
+    stop)
         kill -9 "$(pgrep -f "./manage_my_process")"
         sudo rm -R "/var/run/my_process.pid"
         echo "manage_my_process stopped"
         ;;
-    "restart")
+    restart)
         kill -9 "$(pgrep -f "./manage_my_process")"
         sudo rm -R "/var/run/my_process.pid" 
         ./manage_my_process &
         echo $BASHPID > /var/run/my_process.pid
         echo "manage_my_process restarted"
         ;;
-    "")
+    *)
         echo "Usage: manage_my_process {start|stop|restart}"
         ;;
 esac
